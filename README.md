@@ -1,10 +1,10 @@
 # TCIA Swagger API Definitions
 
-TCIA Swagger API definitions were created by using the Swagger Inspector and SwaggerHub.
+TCIA Swagger API definitions were created using the Swagger Inspector and SwaggerHub.
 
 The steps followed:
 
-Run the REST end point in Swagger Inspector.
+Run the REST endpoint in Swagger Inspector.
 
 Create Open API Definition by "Go to SwaggerHub" and Import OpenAPI.
 
