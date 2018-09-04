@@ -9,7 +9,7 @@
     "url" : "http://172.20.11.222:8000"
   } ],
   "paths" : {
-    "/services/v4/TCIA/query/NewStudiesInPatientCollection" : {
+    "/radiology/NewStudiesInPatientCollection" : {
       "get" : {
         "description" : "Returns a set of Patients that have been added to a specified collection since a specified date",
         "parameters" : [ {
@@ -60,7 +60,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getManufacturerValues" : {
+    "/radiology/getManufacturerValues" : {
       "get" : {
         "description" : "Returns a set of all manufacturer names filtered by query keys",
         "parameters" : [ {
@@ -127,7 +127,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getSingleImage" : {
+    "/radiology/getSingleImage" : {
       "get" : {
         "description" : "Returns a single image",
         "parameters" : [ {
@@ -164,7 +164,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getBodyPartValues" : {
+    "/radiology/getBodyPartValues" : {
       "get" : {
         "description" : "Returns all the body part names filtered by query keys",
         "parameters" : [ {
@@ -202,7 +202,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getPatient" : {
+    "/radiology/getPatient" : {
       "get" : {
         "description" : "Returns a set of patient objects filtered by query keys",
         "parameters" : [ {
@@ -1540,7 +1540,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getCollectionValues" : {
+    "/radiology/getCollectionValues" : {
       "get" : {
         "description" : "Set of all collection names",
         "responses" : {
@@ -1717,7 +1717,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getSOPInstanceUIDs" : {
+    "/radiology/getSOPInstanceUIDs" : {
       "get" : {
         "description" : "Return a list of SOP Instance UID given a SeriesInstanceUID",
         "parameters" : [ {
@@ -1994,7 +1994,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getModalityValues" : {
+    "/radiology/getModalityValues" : {
       "get" : {
         "description" : "Return a set of all modality values filtered by query keys",
         "parameters" : [ {
@@ -2036,7 +2036,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/PatientsByModality" : {
+    "/radiology/PatientsByModality" : {
       "get" : {
         "description" : "Search for a list of PatientIDs, by using Collection Name and Modality",
         "parameters" : [ {
@@ -3110,7 +3110,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getSeriesSize" : {
+    "/radiology/getSeriesSize" : {
       "get" : {
         "description" : "Set of total byte size and object count filtered by query key",
         "parameters" : [ {
@@ -3142,7 +3142,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/NewPatientsInCollection" : {
+    "/radiology/NewPatientsInCollection" : {
       "get" : {
         "description" : "Returns a set of Patients that have been added to a specified collection since a specified date",
         "parameters" : [ {
@@ -3966,7 +3966,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getPatientStudy" : {
+    "/radiology/getPatientStudy" : {
       "get" : {
         "description" : "Returns a set of patient/study objects filtered by query parameters",
         "parameters" : [ {
@@ -4019,7 +4019,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getImage" : {
+    "/radiology/getImage" : {
       "get" : {
         "description" : "Returns a set of images in a zip file",
         "parameters" : [ {
@@ -4047,7 +4047,7 @@
         }
       }
     },
-    "/services/v4/TCIA/query/getSeries" : {
+    "/radiology/getSeries" : {
       "get" : {
         "description" : "Returns a set of series objects filtered by query parameters",
         "parameters" : [ {
@@ -4146,14 +4146,14 @@
         }
       }
     },
-    "/services/v4/SharedList/query/ContentsByName" : {
+    "/radiology/getSharedList" : {
       "get" : {
         "description" : "Get Contents of a shared list by list name",
         "parameters" : [ {
           "name" : "name",
           "in" : "query",
           "required" : true,
-          "description" : "List name",
+          "description" : "Shared List name",
           "schema" : {
             "type" : "string"
           },
